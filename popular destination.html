@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+ body
+{
+	margin: 100px;
+	padding: 0;
+	font-family: poppins;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	min-height: 100vh;
+	color: #fff;
+
+}
+
+.container
+{
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card
+{
+	position: relative;
+	padding: 20px;
+	margin-bottom:50px;
+	left: -6;
+	width: 300px;
+	height: 400px;
+	transition: 0.3s ease-out;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+
+}
+
+.card  .imgbox
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.card  .imgbox img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 80%;
+display: block;
+transition: 0.5s;
+}
+
+.card .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	padding: 12px;
+	background: #ff0066;
+	transition: all 0.5s cubic-bezier(.48,-0.28,0.41,1.4);
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+.card:hover .content
+{
+	width: 100%;
+	height: 75%;
+	left: 0;
+	bottom: 0;
+
+}
+
+.content p
+{
+	margin: 10px 0 0;
+	padding: 1em 1em;
+	transform: translateY(2em);
+	line-height: 1.3em;
+	transition: 0,3s;
+	text-align: justify;
+	opacity: 0;
+}
+
+.card:hover .content p
+{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+h2
+{
+	text-align: center;
+}
+
+
+.card:hover
+{
+	box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+.button{
+       margin: 0px 10px;
+       border: 2px solid #4d96fb;
+       padding: 13px 35px;
+       justify-content: center;
+       display:flex;
+       letter-spacing: 1px;
+       color: #000;
+       border-radius: 30px;
+       background-color: #4d96fb;
+       text-decoration: none;
+}
+.button:hover{
+       border: 2px solid #A2BAF5;
+       color: #4d96fb;
+       background-color:white;
+       transition:0.5s
+       cursor:pointer;
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/gat.jpg">
+			</div>
+			<div class="content">
+				<h2>Gateway of India</h2>
+			<p>Tripadvisor (12,547) · Landmark & historical building
+Hotel Apollo Mahakavi Bhushan Road, Mumbai, Maharashtra 400001 · ~18.8 km<p>
+	       <a href="https://www.google.co.in/maps/dir//gateway+of+india/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7d1c73a0d5cad:0xc70a25a7209c733c?sa=X&ved=2ahUKEwiFupnQyOf9AhWuXWwGHXTZCIgQ9Rd6BQiBARAF" class="button" >Go to Location</a>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/chha.jpg">
+			</div>
+			<div class="content">
+				<h2>Chhatrapati Shivaji Terminus</h2>
+			<p>Tripadvisor (4,513) · Train station Dadabhai Naoroji Road, Chhatrapati Shivaji Terminus Area, Fort, Mumbai,<br>Opens--Mon 02:00 Saturday Closed<br> Sunday--Closed<br>
+other Day--02:00 - 17:00<p>
+	<a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/chhatrapati+shivaji+maharaj+terminus/@19.0659783,72.705546,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7ce27b8aa3bdf:0x21434b0703218d1b!2m2!1d72.8354475!2d18.9398446" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/mumbai.jpg">
+			</div>
+			<div class="content">
+				<h2>Bandra - Worli Sea Link</h2>
+			<p>Mt Mary, Bandra West, Mumbai, Maharashtra 400030·~55.5 km<br>The Bandra–Worli Sea Link is a 5.6 km long, 8-lane wide bridge that links Bandra in the Western Suburbs of Mumbai </p>
+				<a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/Bandra+-+Worli+Sea+Link/@19.0986062,72.7658224,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7cf458976047d:0x92f754f6dbd62de3!2m2!1d72.8144059!2d19.0251963" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/raja.jpg">
+			</div>
+			<div class="content">
+				<h2>Rajabai Clock Tower</h2>
+			<p>Karmaveer Bhaurao Patil Marg, Mumbai, Maharashtra 400032 · ~68.4 km<br>The Rajabai Tower is a clock tower in South Mumbai India. It is in the confines of the Fort campus of the University of Mumbai. It stands at a height of 85 m.<br><br>All day open--	
+            09:00 - 22:45</p>
+           <a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/Rajabai+Clock+Tower/@19.060301,72.7038915,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7d1c2dd3082b3:0x15db02833bd8cc03!2m2!1d72.8299809!2d18.9297667" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/bhau.jpg">
+			</div>
+			<div class="content">
+				<h2>Dr. Bhau Daji Lad Museum</h2>
+			<p>91 A, Rani Baug, Veer Mata Jijbai Bhonsle Udyan, Dr Baba Saheb Ambedkar Marg, Byculla East, Mumbai, Maharashtra 400027 · ~62.8 km</p>Wednesday--Closed<br>
+			other day--	10:00 - 18:00<br>
+				<br><a href="https://www.google.co.in/maps/dir//Dr.+Bhau+Daji+Lad+Museum%3C/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7ce5b428e70af:0x79efde6c140c2e05?sa=X&ved=2ahUKEwiFiOalxuf9AhU3SGwGHXxECYkQ9Rd6BQiAARAF" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/colaba.jpg">
+			</div>
+			<div class="content">
+				<h2>Colaba Causeway</h2>
+			<p>Upper Colaba Road, Mumbai, Maharashtra · ~68.9 km.<br>Colaba Causeway, officially known as Shahid Bhagat Singh Road, is a commercial street, and a major causeway or land link between Colaba <p>
+				<a href="https://www.google.co.in/maps/dir//Colaba+Causeway,+Mumbai,+Maharashtra/@18.9246447,72.8299428,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7d194218579c9:0xd9ae43411acdb561!2m2!1d72.8321315!2d18.9246447" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/parla.jpg">
+			</div>
+			<div class="content">
+				<h2>Parliament Building</h2>
+			<p>Madam Kama Road, Nariman Point, Hutatma Rajguru Chowk, Mumbai, Maharashtra 400032 · ~18.5 km<br>This place is of high significance for Indian politics. Outsider are not allowed.. But it's lighted very well from outside during night. A good visit place for selfies</p>
+			<a href="https://www.google.co.in/maps/dir//WRGF%2BFMF+Maharashtra+Vidhan+Bhavan,+Vidhan+Bhavan+Marg,+Nariman+Point,+Mumbai,+Maharashtra+400021/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7d1e96d790c07:0x5240aee242919df5?sa=X&ved=2ahUKEwi09eKDx-f9AhV6R2wGHWYuCzYQ48ADegQIZxAO" class="button">Go to Location</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/mani.jpg">
+			</div>
+			<div class="content">
+				<h2>Mani Bhavan Gandhi Sangrahalaya</h2>
+			<p>19 Laburnum Road, Gamdevi, Mumbai, Maharashtra 400007 · ~65.1 km<br>Mani Bhavan is a museum and historical building dedicated to Gandhi, situated at Laburnum Road in the Gamdevi precinct of Mumbai.</p>
+			<a href="https://www.google.co.in/maps/dir//Mani+Bhavan+Gandhi+Sangrahalaya/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7ce0c6988759f:0x1ffe26352f6ff22e?sa=X&ved=2ahUKEwjfjrvTx-f9AhUQR2wGHXxCBqEQ9Rd6BQiGARAF" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/neharu.jpg">
+			</div>
+			<div class="content">
+				<h2>Nehru Centre</h2>
+			<p>Nehru Centre Dr. Annie Besant Road, Worli, Mumbai, Maharashtra 400018 · ~19.1 km<p>
+				<a href="https://www.google.co.in/maps/dir//XRQ8%2B84H+Nehru+Centre:+Hall+Of+Harmony,+Lotus+Colony,+Worli,+Mumbai,+Maharashtra+400018/@18.9883016,72.8066134,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7cfa4d8a58e97:0x3fa071d70242b742!2m2!1d72.8153681!2d18.9883016" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		</div>
+</body>
+</html>

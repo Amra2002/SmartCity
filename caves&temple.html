@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+ body
+{
+	margin: 100px;
+	padding: 0;
+	font-family: poppins;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	min-height: 100vh;
+	color: #fff;
+
+}
+
+.container
+{
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card
+{
+	position: relative;
+	padding: 20px;
+	margin-bottom:50px;
+	left: -6;
+	width: 300px;
+	height: 400px;
+	transition: 0.3s ease-out;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+
+}
+
+.card  .imgbox
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.card  .imgbox img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 80%;
+display: block;
+transition: 0.5s;
+}
+
+.card .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	padding: 12px;
+	background: #ff0066;
+	transition: all 0.5s cubic-bezier(.48,-0.28,0.41,1.4);
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+.card:hover .content
+{
+	width: 100%;
+	height: 75%;
+	left: 0;
+	bottom: 0;
+
+}
+
+.content p
+{
+	margin: 10px 0 0;
+	padding: 1em 1em;
+	transform: translateY(2em);
+	line-height: 1.3em;
+	transition: 0,3s;
+	text-align: justify;
+	opacity: 0;
+}
+
+.card:hover .content p
+{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+h2
+{
+	text-align: center;
+}
+
+
+.card:hover
+{
+	box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+.button{
+       margin: 0px 10px;
+       border: 2px solid #4d96fb;
+       padding: 13px 35px;
+       justify-content: center;
+       display:flex;
+       letter-spacing: 1px;
+       color: #000;
+       border-radius: 30px;
+       background-color: #4d96fb;
+       text-decoration: none;
+}
+.button:hover{
+       border: 2px solid #A2BAF5;
+       color: #4d96fb;
+       background-color:white;
+       transition:0.5s
+       cursor:pointer;
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/kaneri.jpg">
+			</div>
+			<div class="content">
+				<h2>Kanheri Caves</h2>
+			<p>National Park-Kanheri Caves Road, Mumbai, Maharashtra 400101 · ~10.9 km<br>The Kanheri Caves are a group of caves and rock-cut monuments cut into a massive basalt outcrop in the forests of the Sanjay Gandhi National Park, </p>
+	       <a href="https://www.google.co.in/maps/dir//Kanheri+Caves,+Mumbai,+Maharashtra+400101/@19.2058509,72.9046617,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7b9e6e177d16d:0xf5677ab36922b95f!2m2!1d72.9068504!2d19.2058509" class="button" >Go to Location</a>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/elepha.jpg">
+			</div>
+			<div class="content">
+				<h2>Elephanta Caves</h2>
+			<p>Gharapuri Island, Mumbai, Maharashtra 400094 · ~16.4 km<br>The Elephanta Caves are a collection of cave temples predominantly dedicated to the Hindu god Shiva.[1][2][3] They are on Elephanta Island, </p>
+	<a href="https://www.google.co.in/maps/dir//location+of+elephanta+caves/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c5307da3602f:0xf4ab181b1aaef53f?sa=X&ved=2ahUKEwiX-vfp0ej9AhVRR2wGHTrfC_gQ9Rd6BQiHARAF" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Mahakali.jpg">
+			</div>
+			<div class="content">
+				<h2>Mahakali Caves</h2>
+			<p>Mahakali Caves Rd, Sunder Nagar, Andheri East, Jogeshwari East, Mumbai, Maharashtra 400093 · ~5.1 km<br>The Mahakali Caves, also Kondivite Caves, are a group of 19 rock-cut monuments built between 1st century BCE and 6th century CE</p>
+           <a href="https://www.google.co.in/maps/dir//4VJF%2B27M+Mahakali+Caves,+Mahakali+Caves+Rd,+Sunder+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400093/@19.1300798,72.8709851,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c82074c3942f:0x20ac48d1ab4e8ed7!2m2!1d72.8731738!2d19.1300798" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/siddhi.jpg">
+			</div>
+			<div class="content">
+				<h2>Siddhivinayak Temple, Mumbai</h2>
+			<p>Mumbai, MH, India, Mumbai, Maharashtra, Maharashtra 400001 · ~16 km</p>
+				<br><a href="https://www.google.co.in/maps/dir//2R8J%2BP4J+Shree+Siddhivinayak+Temple,+SK+Bole+Marg,+Prabhadevi,+Mumbai,+Maharashtra+400028/@19.0168254,72.8280617,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7cec0d851ebc3:0xcc61876914526329!2m2!1d72.8302504!2d19.0168254" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Babulnath.jpg">
+			</div>
+			<div class="content">
+				<h2>Babulnath Temple</h2>
+			<p>Babulnath Road, Mumbai, Maharashtra 400006 · ~16.8 km<br> Lord Shiva on the hill of Babulnath being the principal deity of Mumbai showers his grace and mercy on entire city. </p>
+				<a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/location+of+Babulnath+Temple+Mumbai/@19.0737003,72.6934187,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7cf2e129ce79b:0x5de3b58f5cbadb87!2m2!1d72.8084396!2d18.9573878" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/mumba.jpg">
+			</div>
+			<div class="content">
+				<h2>Mumba Devi Temple</h2>
+			<p>Mumba Devi Marg, Zaveri Bazar, Mumbai, Maharashtra 400002 · ~16.2 km<br>Mumba Devi Mandir is an old temple in the city of Mumbai, Maharashtra, India dedicated to the goddess Mumbā, the local incarnation of the Devi. </p>
+			<a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/location+of+Mumba+devi+Temple+Mumbai/@19.0720801,72.6975628,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7cfecc763321b:0x9853129a582225b2!2m2!1d72.83093!2d18.9520952" class="button">Go to Location</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/mani.jpg">
+			</div>
+			<div class="content">
+				<h2>St Michael’s Church, Mumbai</h2>
+			<p>Lady Jamshedji Road, Mahim West, Mumbai, Maharashtra 400016 · ~17 km<br>Built between 1512 and 1585 as per various accounts, St Michal’s Church is the oldest Christian house of worship in the city</p>
+			<a href="https://www.google.co.in/maps/dir//St+Michael%E2%80%99s+Church,+Mumbai/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c92e17100001:0x8ba96c0925b39f32?sa=X&ved=2ahUKEwj01-Wnxun9AhUL4XMBHRW-DHgQ9Rd6BQiIARAE" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/mount.jpg">
+			</div>
+			<div class="content">
+				<h2>Mount Mary Church</h2>
+				<p>Mount Mary Road, Bandra West, Mumbai, Maharashtra 400050 · ~16.6 km<br>he Basilica of Our Lady of the Mount, more commonly known as Mount Mary Church, is a oman Catholic Basilica located in Bandra, Mumbai.<p>
+				<a href="https://www.google.co.in/maps/dir//mount+mary+church+mumbai/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c9409a609d75:0xd0a71c45e7557bfa?sa=X&ved=2ahUKEwjijuWfxOn9AhWrR2wGHZDRA_0Q9Rd6BQiZARAF"class="button">Go to Location</a>
+			</div>
+		</div>
+
+            <div class="card">
+			<div  class="imgbox">
+				<img src="images/pagoda.jpg">
+			</div>
+			<div class="content">
+				<h2>Global Vipassana Pagoda</h2><p>Next to Esselworld, Gorai Village, Borivali (West), Mumbai, Maharashtra 400091 · ~5 km<br>The Global Vipassana Pagoda is a Meditation dome hall with a capacity to seat around 8,000 Vipassana </p>
+				<a href="https://www.google.co.in/maps/dir//Global+Vipassana+Pagoda+location+of+Mumbai/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7b158222067c7:0x4ce86be376e098ba?sa=X&ved=2ahUKEwjszsCKwun9AhXszTgGHekhBdEQ9Rd6BQiJARAF"class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+</body>
+</html>

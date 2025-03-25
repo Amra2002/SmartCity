@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+ body
+{
+	margin: 100px;
+	padding: 0;
+	font-family: poppins;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	min-height: 100vh;
+	color: #fff;
+
+}
+
+.container
+{
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card
+{
+	position: relative;
+	padding: 20px;
+	margin-bottom:50px;
+	left: -6;
+	width: 300px;
+	height: 400px;
+	transition: 0.3s ease-out;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+
+}
+
+.card  .imgbox
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.card  .imgbox img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 80%;
+display: block;
+transition: 0.5s;
+}
+
+.card .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	padding: 12px;
+	background: #ff0066;
+	transition: all 0.5s cubic-bezier(.48,-0.28,0.41,1.4);
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+.card:hover .content
+{
+	width: 100%;
+	height: 75%;
+	left: 0;
+	bottom: 0;
+
+}
+
+.content p
+{
+	margin: 10px 0 0;
+	padding: 1em 1em;
+	transform: translateY(2em);
+	line-height: 1.3em;
+	transition: 0,3s;
+	text-align: justify;
+	opacity: 0;
+}
+
+.card:hover .content p
+{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+h2
+{
+	text-align: center;
+}
+
+
+.card:hover
+{
+	box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+.button{
+       margin: 0px 10px;
+       border: 2px solid #4d96fb;
+       padding: 13px 35px;
+       justify-content: center;
+       display:flex;
+       letter-spacing: 1px;
+       color: #000;
+       border-radius: 30px;
+       background-color: #4d96fb;
+       text-decoration: none;
+}
+.button:hover{
+       border: 2px solid #A2BAF5;
+       color: #4d96fb;
+       background-color:white;
+       transition:0.5s
+       cursor:pointer;
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/hag.jpg">
+			</div>
+			<div class="content">
+				<h2>Hanging Gardens, Malabar Hill</h2>
+			<p>Hanging Gardens are the most popular gardens in Mumbai. The gardens are also known as Pherozeshah Mehta Gardens. These gardens are one of the most beautiful gardens in Mumbai..</p>
+	       <a href="https://www.google.co.in/maps/dir//Hanging+Garden,+Simla+Nagar,+Malabar+Hill,+Mumbai,+Maharashtra+400006/@18.9568956,72.8021443,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7ce09ef862053:0x44e18800c5f085d9!2m2!1d72.804333!2d18.9568956" class="button" >Go to Location</a>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Johnson.jpg">
+			</div>
+			<div class="content">
+				<h2>Johnson & Johnson Park, Mulund</h2>
+			<p>Johnson & Johnson Ltd. Janssen Cilag Higi House.Opp.Rallywolf L.B.S.Marg Mulund West, Mumbai, Maharashtra 400080 · ~10.7 km<br></p>
+	<a href="https://www.bing.com/search?q=Johnson+%26+Johnson+Park%2C+Mulund&qs=n&form=QBRE&sp=-1&lq=0&pq=johnson+%26+johnson+park%2C+mulund&sc=10-30&sk=&cvid=7244A4152A744FBA9121B7FD14DBEC89&ghsh=0&ghacc=0&ghpl" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Kashmir.jpg">
+			</div>
+			<div class="content">
+				<h2> Chhota Kashmir, Goregaon</h2>
+			<p>Chhota Kashmir is a popular garden in Mumbai, which is located in Aarey Colony, Goregaon. It is one of the most popular gardens in Mumbai for love birds, couples, and children alike</p>
+           <a href="https://www.google.co.in/maps?q=Chhota+Kashmir,+Goregaon&sxsrf=AJOqlzXa9hgGWx8X3oMho6w0po4qQ7g-6A:1679282664280&uact=5&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCC4QgAQQxwEQrwEyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMggIABAWEB4QDzICCCYyAggmMgIIJjoHCCMQ6gIQJzoNCC4QxwEQrwEQ6gIQJzoNCAAQjwEQ6gIQtAIYAToNCC4QjwEQ6gIQtAIYAUoECEEYAFCsBVjlbWCsc2gCcAF4AIAB4wGIAeMBkgEDMi0xmAEAoAEBoAECsAEUwAEB2gEGCAEQARgK&um=1&ie=UTF-8&sa=X&ved=2ahUKEwidjK6Byen9AhWljeYKHcYzBuIQ_AUoAnoECAEQBA" class="button">Go to Location</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/priyadarshini-park.jpg">
+			</div>
+			<div class="content">
+				<h2>Priyadarshini Park, Napean Sea Road</h2>
+			<p> Priyadarshini Park is a beautiful public space located on Napean Sea Road, Mumbai. It is a part of sports complex , named, Priyadarshini Sports Complex. </p>
+				<a href="https://www.google.co.in/maps/dir//Priyadarshini+Park,+Napean+Sea+Road/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7cde10fe97ac3:0x19f9e3894e2b8919?sa=X&ved=2ahUKEwi9x-bzyen9AhUk1XMBHVAOCRoQ9Rd6BAh4EAU" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Shivajipark.jpg">
+			</div>
+			<div class="content">
+				<h2>Shivaji Park</h2>
+			<p>Shivaji park is a playground for budding cricketers amidst a residential area at Dadar. Sivaji park has become famous as a training ground for some famous </p>
+				<a href="https://www.google.co.in/maps/dir//Shivaji+Park,+Mumbai,+Maharashtra/@19.0283595,72.8338639,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7cece6ca96d65:0x859f2daca854a87!2m2!1d72.8384026!2d19.030283?hl=en"class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/juhu.jpg">
+			</div>
+			<div class="content">
+				<h2>Juhu Beach</h2>
+			<p>The most popular beach in Mumbai, Juhu is located close to Andheri and is the desired location for many film shoots. It is the longest beach in Mumbai and is renowned for the wide variety of street food one can find</p>
+			<a href="https://www.google.co.in/maps?sxsrf=AJOqlzVrc17f2KNXJl5bkRXLutzjFkd1nA:1679284461670&uact=5&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCC4QgwEQsQMQQzIECAAQQzIHCAAQgAQQCjIECAAQQzIECAAQQzIHCAAQgAQQCjIECAAQQzIHCAAQgAQQCjIGCAAQBxAeMgcIABCABBAKOgoIABBHENYEELADOgcIABCwAxBDOg0IABDkAhDWBBCwAxgBOgwILhDIAxCwAxBDGAI6BwgjELECECc6CgguELEDEIMBEEM6AggmOgoIABCxAxCDARBDOgQILhBDOgoILhDHARCvARBDOgcIABCxAxBDOggIABAHEB4QCjoHCC4QDRCABDoHCAAQDRCABDoNCC4QDRCABBDHARCvAToPCC4QDRCDARCxAxCABBAKOgkIABCABBANEAo6DwguEIAEEA0QxwEQrwEQCkoECEEYAFCZBFi7UGDSd2gCcAF4AIABrwKIAbQQkgEIMC4xMS4xLjGYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&q=aksa+beach&um=1&ie=UTF-8&sa=X&ved=2ahUKEwil6oauzun9AhUXDbcAHTgnDNQQ_AUoAnoECAEQBA" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Aksha.jpg">
+			</div>
+			<div class="content">
+				<h2>Aksa Beach</h2>
+			<p> Located a little on the outskirts of the city in Malad, Aksa Beach is an unparalleled oasis for a rejuvenating retreat from the hustle bustle of the city traffic.</p>
+				<a href="https://www.google.co.in/maps/place/Aksa+Beach/@19.1760517,72.7908969,16z/data=!3m1!4b1!4m6!3m5!1s0x3be7b42e695a7097:0x48523c8334d8edf7!8m2!3d19.1759612!4d72.7953513!16s%2Fm%2F02q_nqt " class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/ChowpattyBeach.jpg">
+			</div>
+			<div class="content">
+				<h2>Girgaon Chowpatty</h2>
+			<p>At a distance of 4.5 km from Mumbai Chhatrapati Shivaji Terminus, Chowpatty Beach, officially known as Girgaon Chowpatty, is one of the most famous beaches in Mumbai adjoining Marine Drive in the Girgaon area</p>
+			<a href="https://www.google.co.in/maps/dir//Girgaon+Chowpatty/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7ce0f19846e49:0xdc9efea85298c9bf?sa=X&ved=2ahUKEwj_i43kzun9AhW7IbcAHcxhCNUQ9Rd6BAh-EAQ" class="button">Go to Location</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/waterkingdom.jpg">
+			</div>
+			<div class="content">
+				<h2>Water Kingdom</h2>
+			<p> Essel world Amusement Park, Borivali West, Mumbai, Maharashtra 400092<br>Mumbai has several elements that represent its lively spirit. Be it Bollywood films or the serene beaches, Mumbai is a haven for those who like to live life to the fullest</p>
+			<a href="https://www.google.co.in/maps/dir//water+kingdom/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7b158c07de9a1:0x32baf35dc9c8af10?sa=X&ved=2ahUKEwi3m9D20On9AhW0yXMBHaa1CosQ9Rd6BAh_EAU" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		
+
+
+		</div>
+</body>
+</html>

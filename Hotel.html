@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+ body
+{
+	margin: 100px;
+	padding: 0;
+	font-family: poppins;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	min-height: 100vh;
+	color: #fff;
+
+}
+
+.container
+{
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card
+{
+	position: relative;
+	padding: 20px;
+	margin-bottom:50px;
+	left: -6;
+	width: 300px;
+	height: 400px;
+	transition: 0.3s ease-out;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+
+}
+
+.card  .imgbox
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.card  .imgbox img
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 80%;
+display: block;
+transition: 0.5s;
+}
+
+.card .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	padding: 12px;
+	background: #ff0066;
+	transition: all 0.5s cubic-bezier(.48,-0.28,0.41,1.4);
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+.card:hover .content
+{
+	width: 100%;
+	height: 75%;
+	left: 0;
+	bottom: 0;
+
+}
+
+.content p
+{
+	margin: 10px 0 0;
+	padding: 1em 1em;
+	transform: translateY(2em);
+	line-height: 1.3em;
+	transition: 0,3s;
+	text-align: justify;
+	opacity: 0;
+}
+
+.card:hover .content p
+{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+h2
+{
+	text-align: center;
+}
+
+
+.card:hover
+{
+	box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+.button{
+       margin: 0px 10px;
+       border: 2px solid #4d96fb;
+       padding: 13px 35px;
+       justify-content: center;
+       display:flex;
+       letter-spacing: 1px;
+       color: #000;
+       border-radius: 30px;
+       background-color: #4d96fb;
+       text-decoration: none;
+}
+.button:hover{
+       border: 2px solid #A2BAF5;
+       color: #4d96fb;
+       background-color:white;
+       transition:0.5s
+       cursor:pointer;
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/oberoi.jpg">
+			</div>
+			<div class="content">
+				<h2>The Oberoi Mumbai </h2>
+			<p> South Mumbai, Mumbai<br>The Oberoi, Mumbai offers luxury and convenience with a wide range of 24 hour services like spa, butler service, laundry, concierge, business centre and travel desk</p>
+	       <a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/the+oberoi+mumbai/@19.0595435,72.7003298,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7d1e96fffffff:0x385eaa65d82abec1!2m2!1d72.8204516!2d18.926975" class="button" >Go to Location</a>
+			</div>
+		</div>
+
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/seven.jpg">
+			</div>
+			<div class="content">
+				<h2>Hotel Seven Hills Inn</h2>
+			<p>Millenium Plaza, New T2 Airport Link Road, Near Sakinaka, Telephone Exchange, Andheri East, 400059 Mumbai, India <br>Situated 2.8 km from Phoenix Market City Mall, Hotel Seven Hills <p>
+	<a href="https://www.google.co.in/maps/dir//Hotel+Seven+Hills+Inn/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c86ed35d58e1:0x923cff0fce173c97?sa=X&ved=2ahUKEwiw8f2cz-f9AhU5SWwGHUtmC64Q9Rd6BAh_EAQ" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/Novotel.jpg">
+			</div>
+			<div class="content">
+				<h2>Novotel Mumbai Juhu Beach</h2><p>Situated 5.1 km from Chhatrapati Shivaji Airport and overlooking the Arabian Sea Novotel Mumbai Juhu Beach is a beach front property. The hotel features an outdoor pool overlooking the ocean, free parking and 6 dining options</p>
+				<a href="https://www.google.co.in/maps/dir//Novotel+Mumbai+Juhu+Beach/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c99824616e79:0xa01db96507bcb46?sa=X&ved=2ahUKEwjVr8aQzef9AhWWwnMBHTGYBcUQ9Rd6BQigARAE" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/leela.jpg">
+			</div>
+			<div class="content">
+				<h2>The Leela Mumbai</h2>
+			<p>Sahar Road, 400059 Mumbai, India <br>Luxurious accommodation coupled with 6 dining options can be expected at The Leela Mumbai, just 5 minutes' drive from Chhatrapati Shivaji International Airport. An outdoor pool, fitness centre and pampering spa are available.</p>
+           <a href="https://www.google.co.in/maps/dir//The+Leela+Mumbai/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c83fc0eb5271:0x52b711524a2da569?sa=X&ved=2ahUKEwiIr4fl0ef9AhVESmwGHfV_C9kQ9Rd6BQiWARAE" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/place.jpg">
+			</div>
+			<div class="content">
+				<h2>The Taj Mahal Palace</h2>
+			<p>Built in 1903, the iconic Taj Mahal Palace stands majestically opposite the Gateway of India, overlooking the Arabian Sea<br>Sprawled over 2.6 acres, this luxurious hotel boasts 10 restaurants and a variety of traditional Indian therapies at Jiva Spa. </p><br>
+				<br><a href="https://www.google.co.in/maps/dir//taj+hotel+mumbai+taj+hotel+mumbai/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7d1c06fffffff:0xc0290485a4d73f57?sa=X&ved=2ahUKEwjhx7bzz-f9AhUqcGwGHYhgB7EQ9Rd6BQiAARAE" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/trident.jpg">
+			</div>
+			<div class="content">
+				<h2>Trident Bandra Kurla</h2>
+			<p> C-56, G Block, Bandra Kurla Complex, Bandra, 400051 Mumbai, India
+<br>The 5-star Trident Bandra Kurla provides an outdoor swimming pool and full spa services. On-site parking is free. <p>
+				<a href="https://www.google.co.in/maps/dir//Trident+Bandra+Kurla/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c8e94b11a821:0x74acefa4382dbb18?sa=X&ved=2ahUKEwizhK_m0uf9AhX-TmwGHYHRAT4Q9Rd6BQiqARAE" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/regis.jpg">
+			</div>
+			<div class="content">
+				<h2>The St. Regis Mumbai</h2>
+			<p> 462, Senapati Bapat Marg, Worli, 400013 Mumbai, India <br>With exquisitely styled and lavishly appointed accommodations, The St. Regis Mumbai is located in city’s premier entertainment and commercial district of Lower Parel and is renowned for its unique sense of refined luxury. Free WiFi is available.</p>
+			<a href="https://www.google.co.in/maps/dir/19.184925,72.8397314/The+St.+Regis+Mumbai/@19.0915228,72.771518,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7ce8b78ac3db9:0x395ad82b0a483225!2m2!1d72.8252274!2d18.994456" class="button">Go to Location</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/land.jpg">
+			</div>
+			<div class="content">
+				<h2>Taj Lands End</h2>
+			<p>Bandstand, Bandra West, Maharashtra, Bandra, 400050 Mumbai, India<br> Taj Lands End features award-winning traditional Indian spa treatments, an outdoor pool and 5 dining options. Taj Lands End is 6 km from Shivaji Park and 8.3 km from Bandra Kurla Complex. </p>
+			<a href="https://www.google.co.in/maps/dir//Taj+Lands+End/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c945f2fb1149:0xa2ba742a39963b31?sa=X&ved=2ahUKEwi4jODQ0-f9AhXvU2wGHSqlBE4Q9Rd6BAh4EAQ" class="button">Go to Location</a>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div  class="imgbox">
+				<img src="images/vits.jpg">
+			</div>
+			<div class="content">
+				<h2>VITS Mumbai International Airport</h2>
+			<p> Andheri Kurla Road, 400059 Mumbai, India – Great location - show map – Metro access
+
+<br>VITS Mumbai is located only a 5-minute drive from Chhatrapati Shivaji International Airport.
+</p>
+				<a href="https://www.google.co.in/maps/dir//VITS+Mumbai+International+Airport/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7c9c5fe1f8545:0xf876b97b41e5e890?sa=X&ved=2ahUKEwjuqq3j1Of9AhX9wnMBHQ9qDc4Q9Rd6BQiDARAE"class="button">Go to Location</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
